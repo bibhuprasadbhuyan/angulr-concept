@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+   <!-- Normal reusable input -->
+  <app-input-field
+    label="Name"
+    type="email"
+    [control]="form.controls.name">
+  </app-input-field>
+
+
+  <!-- Normal reusable input -->
+  <app-input-field
+    label="Email"
+    type="email"
+    [control]="form.controls.email">
+  </app-input-field>
+
+
+  <!-- Custom CVA component -->
+  <app-phone-number
+    formControlName="phone">
+  </app-phone-number>
+
+
+  <button 
+    mat-raised-button
+    color="primary"
+    type="submit">
+    Submit
+  </button>
+</form>

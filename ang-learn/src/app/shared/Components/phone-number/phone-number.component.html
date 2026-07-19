@@ -1,0 +1,19 @@
+<mat-form-field appearance="outline">
+
+<mat-label>
+Phone Number
+</mat-label>
+
+
+<input
+ matInput
+
+ [disabled]="disabled"
+
+ [value]="phone"
+
+ placeholder="9876543210"
+
+ (input)="updatePhone($event)"
+>
+</mat-form-field>
