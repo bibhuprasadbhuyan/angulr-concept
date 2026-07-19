@@ -7,21 +7,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PhoneNumberComponent } from './Components/phone-number/phone-number.component';
 
 @NgModule({
-  imports: [
-    MaterialModule,
-    ReactiveFormsModule,
-    CommonModule
-  ],
-  declarations: [
-    HeaderComponent,
-    InputFieldComponent,
-    PhoneNumberComponent
-  ],
+  imports: [MaterialModule, ReactiveFormsModule, CommonModule],
+  declarations: [HeaderComponent, InputFieldComponent, PhoneNumberComponent],
   exports: [
     HeaderComponent,
     InputFieldComponent,
     MaterialModule,
-    PhoneNumberComponent
-  ]
+    PhoneNumberComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
